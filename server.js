@@ -7,7 +7,7 @@ const path = require('path');
 const app=express();
 const connectMDB= require('./src/config/db')
 const scheduler=require('./services/scheduler_service')
-const PORT= process.env.PORT ||4000
+const PORT= process.env.PORT ||3000
 
 app.use(favicon(path.join(__dirname,'./assets/img','favicon.ico')))
 app.use(cors({
